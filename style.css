@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+body header h1 {
+  font-weight: 1;
+  letter-spacing: 3px;
+  font-size: 2.3em;
+}
+body header div {
+  width: 100px;
+  height: 3px;
+  background-color: rgb(97, 90, 196);
+}
+body main {
+  margin-top: 30PX;
+}
+body main .product-center {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  position: relative;
+}
+body main .product-center h2 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+body main .product-center .spinner {
+  width: 100px;
+  height: 100px;
+  border: 4px solid gray;
+  border-radius: 50%;
+  border-right: 4px solid blue;
+  animation: spin 0.5s 0s infinite;
+  position: absolute;
+  margin: 0 45% auto;
+}
+body main .product-center a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(245, 247, 249);
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  margin: 20px 10px;
+}
+body main .product-center a img {
+  width: 100%;
+  height: 230px;
+  border-radius: 10px 10px 0px 0px;
+}
+body main .product-center a p {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 8px;
+  color: rgb(163, 170, 176);
+}
+body main .product-center a h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 8px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  body main .product-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  body main .product-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

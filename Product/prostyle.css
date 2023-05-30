@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body a {
+  align-self: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 30px;
+}
+body a button {
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(100, 74, 229);
+  color: white;
+  transition: 0.5s;
+}
+body a button:hover {
+  background-color: rgb(69, 49, 169);
+}
+body article {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 40px auto;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body article img {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 20px;
+}
+body article h1 {
+  font-size: 2em;
+  font-weight: 1;
+  margin-bottom: 10px;
+}
+body article p {
+  margin-bottom: 9px;
+}
+body article p:first-of-type {
+  font-size: 1.3em;
+  color: rgb(107, 116, 124);
+  margin-bottom: 9px;
+}
+body article p:last-of-type {
+  letter-spacing: 1.2px;
+  line-height: 24px;
+}
+body article div {
+  width: 60px;
+  height: 40px;
+}
+body article div span {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  display: inline-block;
+  border-radius: 50%;
+}
+body article button {
+  font-size: 1em;
+  width: 110px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(100, 74, 229);
+  color: white;
+  padding: 6px 0px;
+  transition: 0.5s;
+}
+body article button:hover {
+  background-color: rgb(69, 49, 169);
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  body article {
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+  }
+  body article img {
+    margin-right: 10px;
+    height: 90%;
+    width: 50%;
+  }
+  body article section {
+    margin-left: 10px;
+    margin-top: 60px;
+    height: 100%;
+    flex: 1;
+  }
+}/*# sourceMappingURL=prostyle.css.map */
