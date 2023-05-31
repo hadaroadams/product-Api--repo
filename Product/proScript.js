@@ -7,7 +7,7 @@ console.log(productId)
 
 const respons =async()=>{
     try{
-        container.innerHTML="<h1>Loading...</h1>"
+        container.innerHTML="<h1 class='load'>Loading...</h1>"
         const data = await fetch(url)
         const innerData = await data.json()
         container.innerHTML=""
@@ -22,6 +22,9 @@ respons()
 function display(data){
     data.filter((item)=>{
         if(item.id==productId){
+            let cost = item.fields.price.toString()
+            let newCost = cost.slice(0,2)+"."+cost.slice(2)
+            console.log(newCost)
             let content =
             `
             <a href="../index.html">
@@ -32,7 +35,7 @@ function display(data){
                 <section>
                     <h1>${item.fields.name}</h1>
                     <p>${item.fields.company}</p>
-                    <p>$${item.fields.price}</p>
+                    <p>$${newCost}</p>
                     <div>
                         <span class="product-color" style="background-color:${item.fields.colors[0]}"> </span>
                         <span class="product-color" style="background-color:${item.fields.colors[1]}"> </span>

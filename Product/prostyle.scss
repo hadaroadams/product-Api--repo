@@ -7,6 +7,13 @@
 body{
     display: flex;
     flex-direction: column;
+    height:120vh;
+    justify-content: center;
+
+    .load{
+        align-self: center;
+        height: 100px;
+    }
     a{
         align-self: center;
         width: fit-content;
@@ -93,6 +100,10 @@ body{
         
     }
     @media (min-width:800px) {
+
+        &{
+            height: 100vh;
+        }
         article{
             flex-direction: row;
             align-items: center;

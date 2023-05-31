@@ -7,6 +7,12 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 120vh;
+  justify-content: center;
+}
+body .load {
+  align-self: center;
+  height: 100px;
 }
 body a {
   align-self: center;
@@ -88,6 +94,9 @@ body article button:hover {
   cursor: pointer;
 }
 @media (min-width: 800px) {
+  body {
+    height: 100vh;
+  }
   body article {
     flex-direction: row;
     align-items: center;
